@@ -31,7 +31,8 @@
     items: 4,
     responsiveClass: true,
     nav: true,
-    dots: false,
+    dots: true,
+    dotsEach: 1,
     navText: [
       '<i class="far fa-chevron-left"></i>',
       '<i class="far fa-chevron-right"></i>',
