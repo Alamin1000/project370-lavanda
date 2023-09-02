@@ -38,8 +38,11 @@
       '<i class="far fa-chevron-right"></i>',
     ],
     responsive: {
-      0: {},
-      600: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      767: {
         items: 3,
       },
       991: {
