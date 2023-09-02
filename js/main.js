@@ -39,10 +39,43 @@
     ],
     responsive: {
       0: {},
-      600: {},
-      1000: {},
+      600: {
+        items: 3,
+      },
+      991: {
+        items: 4,
+      },
     },
   });
+
+  // init Isotope
+  // isotope
+  var $grid = $(".gallery-isotope-grid").isotope({
+    // options
+    // filter: "*",
+  });
+  // filter items on button click
+  $(".gallery-isotope-nav").on("click", "li", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
+  // Get the container element
+  var btnContainer = document.getElementById("gallery-isotope-nav");
+
+  // Get all buttons with class="btn" inside the container
+  var btns = btnContainer.querySelectorAll("#gallery-isotope-nav li");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function (event) {
+      var current = btnContainer.getElementsByClassName("active");
+      current[0].className = current[0].className.replace("active", "");
+      // target.className += " active";
+      setTimeout(function () {
+        event.target.classList.add("active");
+      }, 10);
+    });
+  }
 })(jQuery);
 
 $(document).ready(function () {

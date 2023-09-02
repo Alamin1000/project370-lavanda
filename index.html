@@ -28,29 +28,17 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section">Chi siamo</a></li>
+            <li><a href="#gallery-section">Gallery</a></li>
+            <li><a href="#benessere-section">Benessere</a></li>
+            <li><a href="#">Loverazione</a></li>
+            <li><a href="#contact-section">Contatti</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -64,16 +52,20 @@
                 <img src="images/logo.svg" alt="" />
               </a>
 
-              <div class="main-menu">
+              <div class="main-menu d-lg-block d-none">
                 <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Chi siamo</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Benessere</a></li>
+                  <li><a href="#about-section">Chi siamo</a></li>
+                  <li><a href="#gallery-section">Gallery</a></li>
+                  <li><a href="#benessere-section">Benessere</a></li>
                   <li><a href="#">Loverazione</a></li>
-                  <li><a href="#">Contatti</a></li>
+                  <li><a href="#contact-section">Contatti</a></li>
                 </ul>
               </div>
+
+              <a href="#" class="offcanvas-open d-lg-none">
+                <i class="fal fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -88,8 +80,8 @@
             <div class="hero-section__inner">
               <div class="hero-content">
                 <h1 class="h1 mb-0">
-                  Arricchisci la tua giornata con un’esperienza di puro
-                  Benessere
+                  Arricchisci la <br class="d-md-none" />
+                  tua giornata con un’esperienza di puro Benessere
                 </h1>
               </div>
             </div>
@@ -98,7 +90,7 @@
         <!-- hero-section end -->
 
         <!-- abt-section -->
-        <section class="abt-section">
+        <section class="abt-section" id="about-section">
           <div class="container">
             <div class="abt-section__inner">
               <!-- abt-rnd-row -->
@@ -119,7 +111,7 @@
                       trasferire alle persone il valore di Benessere proveniente
                       dalla campagna, sceglie di coltivare lavanda, promuovendo
                       uno stile di vita in
-                      <span class="color-theme1"
+                      <span class="color-theme1 fw-700"
                         >sinergia con i ritmi della natura.</span
                       >
                     </p>
@@ -136,7 +128,7 @@
                     <p class="p">
                       La naturale fertilità del terreno consente crescita
                       rigogliosa del lavandeto, risultato di
-                      <span class="color-theme1"
+                      <span class="color-theme1 fw-700"
                         >anni di pratiche agronomiche rispettose del
                         suolo.</span
                       >
@@ -145,7 +137,7 @@
                       Siamo nel vecchio alveo del fiume Reno, dove i sedimenti
                       delle antiche esondazioni creano un paesaggio agrario dai
                       lievi profili; qui l’orizzonte è segnato da
-                      <span class="color-theme1"
+                      <span class="color-theme1 fw-700"
                         >maestosi alberi e piccoli boschi di pianura con querce,
                         noci e pioppi.</span
                       >
@@ -168,7 +160,7 @@
                     <p class="p">
                       Le piante di lavanda Angustifolia (inglese) e di lavandino
                       Abrialis, sono curate e raccolte
-                      <span class="color-theme1"
+                      <span class="color-theme1 fw-700"
                         >esclusivamente con operazioni manuali,</span
                       >
                       nel rispetto e nella protezione delle loro numerose
@@ -180,7 +172,9 @@
                       Solo grazie a questi accorgimenti e l’attenzione ai
                       dettagli, i prodotti e le esperienze sensoriali si possono
                       vestire del marchio
-                      <span class="color-theme1">Lavanda di Castello.</span>
+                      <span class="color-theme1 fw-700"
+                        >Lavanda di Castello.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -201,7 +195,7 @@
               </div>
 
               <!-- passion-r1 -->
-              <div class="passion-r1 row">
+              <div class="passion-r1 row gy-4">
                 <div class="col-lg-6">
                   <div class="passion-r1__content">
                     <div class="cont-blk">
@@ -210,13 +204,14 @@
                         cresciuta nel tempo, di generazione in generazione: ci
                         occupiamo di ogni fase del processo di produzione dalla
                         coltivazione alla
-                        <span class="color-theme1">raccolta a mano</span> dei
-                        fiori di lavanda e lavandino, fino alla creazione dei
-                        prodotti a base di olio essenziale, unici e autentici.
+                        <span class="color-theme1 fw-700">raccolta a mano</span>
+                        dei fiori di lavanda e lavandino, fino alla creazione
+                        dei prodotti a base di olio essenziale, unici e
+                        autentici.
                       </p>
                       <p class="p">
                         Il progetto Lavanda di Castello nasce dal pensiero dello
-                        <span class="color-theme1"
+                        <span class="color-theme1 fw-700"
                           >straordinario potere di benessere</span
                         >
                         e relax della lavanda su usata negli ambienti di vita
@@ -227,7 +222,9 @@
                       </p>
                       <p class="p">
                         Nei mesi primaverili,
-                        <span class="color-theme1">esclusivamente a mano,</span>
+                        <span class="color-theme1 fw-700"
+                          >esclusivamente a mano,</span
+                        >
                         si eliminano le numerose infestanti che cercano di
                         occupare lo spazio vitale delle piante di lavanda. Con
                         attenzione e continuo controllo delle fioriture si
@@ -236,7 +233,7 @@
                       </p>
                       <p class="p">
                         Anche grazie ai
-                        <span class="color-theme1"
+                        <span class="color-theme1 fw-700"
                           >nostri fidati operai specializzati Barbara e
                           Lazzaro</span
                         >
@@ -246,15 +243,15 @@
                       </p>
                       <p class="p">
                         Questo è un
-                        <span class="color-theme1">momento unico,</span> dove si
-                        alternano pazienza, delicatezza e arte della raccolta a
-                        mano, con lo stupore per l’intensità del profumo e per
-                        la vita nascosta nel lavandeto.
+                        <span class="color-theme1 fw-700">momento unico,</span>
+                        dove si alternano pazienza, delicatezza e arte della
+                        raccolta a mano, con lo stupore per l’intensità del
+                        profumo e per la vita nascosta nel lavandeto.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-0 order-first">
                   <div class="paddion-r1__image">
                     <img src="images/passion-r1.png" alt="" class="img" />
                   </div>
@@ -268,7 +265,7 @@
                   Gli steli fioriti sono depositati subito dopo il taglio, in
                   un’area ombreggiata e ventilata nel boschetto, in attesa di
                   essere trasportati l’indomani al laboratorio per la
-                  <span class="color-theme1"
+                  <span class="color-theme1 fw-700"
                     >magia dell’estrazione dell’olio in corrente di
                     vapore.</span
                   >
@@ -280,7 +277,7 @@
                 <p class="p">
                   Lavanda di Castello si rivolge a una comunità di persone unite
                   dalla stessa
-                  <span class="color-theme1"
+                  <span class="color-theme1 fw-700"
                     >visione di armonia, benessere, rispetto per se stessi e per
                     la natura.</span
                   >
@@ -313,7 +310,7 @@
         <!-- passion-section-end -->
 
         <!-- prod-section -->
-        <section class="prod-section">
+        <section class="prod-section" id="benessere-section">
           <div class="container">
             <div class="prod-section__inner">
               <div
@@ -323,7 +320,7 @@
               </div>
 
               <!-- prod-row -->
-              <div class="prod-row row">
+              <div class="prod-row row gy-4">
                 <div class="col-lg-6">
                   <div class="prod__content">
                     <div class="cont-blk__grp">
@@ -370,7 +367,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-0 order-first">
                   <div class="prod__image">
                     <img src="images/prod.png" alt="" class="img" />
                   </div>
@@ -379,7 +376,7 @@
               <!-- prod-row-end -->
 
               <!-- prod-r2 -->
-              <section class="prod-r2 row">
+              <section class="prod-r2 row gy-4">
                 <div class="col-lg-6">
                   <div class="prod-r2__image">
                     <img src="images/prod-r2.png" alt="" class="img" />
@@ -418,7 +415,7 @@
                 <h2 class="h2 mb-0">Perché Lavanda di Castello</h2>
               </div>
 
-              <div class="why-cards-row row">
+              <div class="why-cards-row row gy-4">
                 <div class="col-lg-3 col-md-6">
                   <div class="why-card">
                     <div class="why-card__image">
@@ -512,7 +509,7 @@
         <!-- why-section-end -->
 
         <!-- gallery-section -->
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery-section">
           <div class="container">
             <div class="gallery-section__inner">
               <div
@@ -522,52 +519,136 @@
               </div>
 
               <div class="gallery-nav">
-                <ul class="nav">
-                  <li><a class="active" href="#">territorio</a></li>
-                  <li><a href="#">comunità</a></li>
-                  <li><a href="#">lavanda</a></li>
+                <ul class="nav gallery-isotope-nav" id="gallery-isotope-nav">
+                  <li class="active" i data-filter=".territory">territorio</li>
+                  <li data-filter=".community">comunità</li>
+                  <li data-filter=".lavanda">lavanda</li>
                 </ul>
               </div>
 
-              <div class="gallery-row row">
-                <div class="col-lg-3 col-md-6 col-6">
+              <div class="gallery-row gallery-isotope-grid row">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-1.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-2.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-3.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-4.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-5.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-6.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-7.png" alt="" class="img" />
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 territory">
                   <div class="gallery-item">
                     <img src="images/img-gallery-8.png" alt="" class="img" />
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-6.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-7.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-8.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-1.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-2.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-3.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-4.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 community">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-5.png" alt="" class="img" />
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-1.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-2.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-7.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-8.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-3.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-4.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-5.png" alt="" class="img" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 lavanda">
+                  <div class="gallery-item">
+                    <img src="images/img-gallery-6.png" alt="" class="img" />
                   </div>
                 </div>
               </div>
@@ -745,7 +826,7 @@
                 <h2 class="h2 mb-0">I nostri Partner</h2>
               </div>
 
-              <div class="partners__row row">
+              <div class="partners__row row gy-5">
                 <div class="col-lg-3 col-md-6">
                   <div class="partner-single">
                     <img src="images/partner-1.png" alt="" class="img" />
@@ -773,10 +854,10 @@
         <!-- partner-section-end -->
 
         <!-- contact-section -->
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
           <div class="container">
             <div class="contact-section__inner">
-              <div class="contact-section__row row">
+              <div class="contact-section__row row gy-5">
                 <div class="col-lg-6">
                   <div class="contact__image">
                     <img src="images/contact.png" alt="" class="img" />
@@ -912,6 +993,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>
