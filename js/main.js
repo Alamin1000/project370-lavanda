@@ -57,6 +57,8 @@
     // options
     // filter: "*",
   });
+  // initial-filter
+  $grid.isotope({ filter: ".territory" });
   // filter items on button click
   $(".gallery-isotope-nav").on("click", "li", function () {
     var filterValue = $(this).attr("data-filter");
