@@ -15,6 +15,8 @@
 body {
   font-size: 16px;
   background-color: var(--theme__color2);
+  background: url('images/body-background.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
   color: #fff;
   overflow-x: hidden;
   word-wrap: break-word;
@@ -83,6 +85,19 @@ p:last-child{
 .main-wrap {
   width: 100%;
   overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--theme__color2);
+}
+@media (max-width: 1599px) {
+  .main-wrap {
+      max-width: 1300px;
+  }
+}
+@media (max-width: 1399px) {
+  .main-wrap {
+      max-width: 1050px;
+  }
 }
 @media (max-width: 1399px) and (min-width: 1200px) {
   .container {
