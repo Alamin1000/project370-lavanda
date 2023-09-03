@@ -81,6 +81,50 @@
       }, 10);
     });
   }
+
+  {
+    function myFunction(x) {
+      let owlCar = $(".why-slider-mobile-active");
+      if (x.matches) {
+        // If media query matches
+        // document.body.style.backgroundColor = "yellow";
+
+        owlCar.addClass("owl-carousel");
+        owlCar.owlCarousel({
+          loop: true,
+          margin: 17,
+          items: 4,
+          responsiveClass: true,
+          nav: true,
+          dots: true,
+          dotsEach: 1,
+          navText: [
+            '<i class="far fa-chevron-left"></i>',
+            '<i class="far fa-chevron-right"></i>',
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            767: {
+              items: 3,
+            },
+            991: {
+              items: 4,
+            },
+          },
+        });
+      } else {
+        // document.body.style.backgroundColor = "pink";
+        owlCar.removeClass("owl-carousel");
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 767px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+  }
 })(jQuery);
 
 $(document).ready(function () {

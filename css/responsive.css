@@ -379,6 +379,10 @@
         margin-right: 0;
     }
 
+
+    .why-cards-row {
+        --bs-gutter-x: 0;
+    }
 }
 
 
